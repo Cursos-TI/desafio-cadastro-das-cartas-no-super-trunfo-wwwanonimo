@@ -29,53 +29,53 @@ int main() {
     printf("Insira os dados da carta 01:\n");
 
     printf("Estado:");
-    scanf(" %s\n", &estado01);
+    scanf(" %s", &estado01);
 
     printf("Codigo: ");
-    scanf("%3s\n", codigo01);  // Limita a 3 caracteres + '\0'
+    scanf("%3s", codigo01);  // Limita a 3 caracteres + '\0'
 
     printf("Cidade: ");
-    scanf("%s\n]", nomeCidade01);
+    scanf("%s", nomeCidade01);
 
     printf("Populacao: ");
-    scanf("%f\n", &populacao01);  
+    scanf("%f", &populacao01);  
 
     printf("Area: ");
-    scanf("%f\n", &area01);
+    scanf("%f", &area01);
 
     printf("PIB: ");
-    scanf("%f\n", &pib01);
+    scanf("%f", &pib01);
 
     printf("Pontos turisticos: ");
-    scanf("%d\n", &pontosTuristicos01);
+    scanf("%d", &pontosTuristicos01);
 
     // Cálculos para carta 01
     quocientepib01 = pib01 / (float)populacao01;
     quocientedensidade01 = (float)populacao01 / area01;
 
     // Leitura dos dados da carta 02
-    printf("\nInsira os dados da carta 02:\n");
+    printf("/nInsira os dados da carta 02:\n");
 
     printf("Estado: ");
-    scanf(" %c", &estado02);
+    scanf("%c", &estado02);
 
     printf("Codigo: ");
-    scanf("%3s\n", codigo02);
+    scanf("%3s", codigo02);
 
     printf("Cidade: ");
-    scanf("%s\n]", nomeCidade02);
+    scanf("%s", nomeCidade02);
 
     printf("Populacao: ");
-    scanf("%f\n", &populacao02);
+    scanf("%f", &populacao02);
 
     printf("Area: ");
-    scanf("%f\n", &area02);
+    scanf("%f", &area02);
 
     printf("PIB: ");
-    scanf("%f\n", &pib02);
+    scanf("%f", &pib02);
 
     printf("Pontos turisticos: ");
-    scanf("%d\n", &pontosTuristicos02);
+    scanf("%d", &pontosTuristicos02);
 
     // Cálculos para carta 02
     quocientepib02 = pib02 / (float)populacao02;
@@ -87,29 +87,29 @@ int main() {
 
     // Exibição dos dados da Carta 01
     printf("\nCarta 01\n");
-    printf("Estado: %s\n", estado01);
-    printf("Codigo: %s\n", codigo01);
-    printf("Cidade: %s\n", nomeCidade01);
-    printf("Populacao: %lu\n", populacao01);
-    printf("Area: %.2f km\n", area01);
-    printf("PIB: %.2f bilhões de reais\n", pib01);
-    printf("Pontos turisticos: %d\n", pontosTuristicos01);
-    printf("PIB per capita: %.6f\n", quocientepib01);
-    printf("Densidade Populacional: %.6f habitantes/km\n", quocientedensidade01);
-    printf("Super Poder: %.6f\n", superPoder01);
+    printf("Estado: %s", estado01);
+    printf("Codigo: %s", codigo01);
+    printf("Cidade: %s", nomeCidade01);
+    printf("Populacao: %lu", populacao01);
+    printf("Area: %.2f km", area01);
+    printf("PIB: %.2f bilhões de reais", pib01);
+    printf("Pontos turisticos: %d", pontosTuristicos01);
+    printf("PIB per capita: %.6f", quocientepib01);
+    printf("Densidade Populacional: %.6f habitantes/km", quocientedensidade01);
+    printf("Super Poder: %.6f", superPoder01);
 
     // Exibição dos dados da Carta 02
     printf("\nCarta 02\n");
-    printf("Estado: %s\n", estado02);
-    printf("Codigo: %s\n", codigo02);
-    printf("Cidade: %s\n", nomeCidade02);
-    printf("Populacao: %lu\n", populacao02);
-    printf("Area: %.2f km\n", area02);
-    printf("PIB: %.2f bilhoes de reais\n", pib02);
-    printf("Pontos turisticos: %d\n", pontosTuristicos02);
-    printf("PIB per capita: %.6f\n", quocientepib02);
-    printf("Densidade Populacional: %.6f habitantes/km\n", quocientedensidade02);
-    printf("Super Poder: %.6f\n", superPoder02);
+    printf("Estado: %s", estado02);
+    printf("Codigo: %s", codigo02);
+    printf("Cidade: %s", nomeCidade02);
+    printf("Populacao: %lu", populacao02);
+    printf("Area: %.2f km", area02);
+    printf("PIB: %.2f bilhoes de reais", pib02);
+    printf("Pontos turisticos: %d", pontosTuristicos02);
+    printf("PIB per capita: %.6f", quocientepib02);
+    printf("Densidade Populacional: %.6f habitantes/km", quocientedensidade02);
+    printf("Super Poder: %.6f", superPoder02);
 
     // Comparações
     printf("\nComparacoes das cartas\n");
