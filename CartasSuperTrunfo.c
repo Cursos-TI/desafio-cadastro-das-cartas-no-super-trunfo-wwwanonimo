@@ -2,7 +2,7 @@
 
 int main() {
     // Declaração das variáveis para a carta 01
-    char estado01;
+    char estado01[3];
     char codigo01[4];
     char nomeCidade01[50];
     int populacao01;
@@ -14,7 +14,7 @@ int main() {
     float superPoder01;
 
     // Declaração das variáveis para a carta 02
-    char estado02;
+    char estado02[3];
     char codigo02[4];
     char nomeCidade02[50];
     int populacao02;
@@ -29,24 +29,24 @@ int main() {
     printf("Insira os dados da carta 01:\n");
 
     printf("Estado:");
-    scanf(" %s", &estado01);
+    scanf("%2s", estado01);
 
-    printf("Codigo: ");
+    printf("Codigo:");
     scanf("%3s", codigo01);  // Limita a 3 caracteres + '\0'
 
-    printf("Cidade: ");
+    printf("Cidade:");
     scanf("%s", nomeCidade01);
 
-    printf("Populacao: ");
+    printf("Populacao:");
     scanf("%f", &populacao01);  
 
-    printf("Area: ");
+    printf("Area:");
     scanf("%f", &area01);
 
-    printf("PIB: ");
+    printf("PIB:");
     scanf("%f", &pib01);
 
-    printf("Pontos turisticos: ");
+    printf("Pontos turisticos:");
     scanf("%d", &pontosTuristicos01);
 
     // Cálculos para carta 01
@@ -54,27 +54,27 @@ int main() {
     quocientedensidade01 = (float)populacao01 / area01;
 
     // Leitura dos dados da carta 02
-    printf("/nInsira os dados da carta 02:\n");
+    printf("\nInsira os dados da carta 02:\n");
 
-    printf("Estado: ");
-    scanf("%c", &estado02);
+    printf("Estado:");
+    scanf("%2s", estado02);
 
-    printf("Codigo: ");
+    printf("Codigo:");
     scanf("%3s", codigo02);
 
-    printf("Cidade: ");
+    printf("Cidade:");
     scanf("%s", nomeCidade02);
 
-    printf("Populacao: ");
+    printf("Populacao:");
     scanf("%f", &populacao02);
 
-    printf("Area: ");
+    printf("Area:");
     scanf("%f", &area02);
 
-    printf("PIB: ");
+    printf("PIB:");
     scanf("%f", &pib02);
 
-    printf("Pontos turisticos: ");
+    printf("Pontos turisticos:");
     scanf("%d", &pontosTuristicos02);
 
     // Cálculos para carta 02
@@ -87,29 +87,29 @@ int main() {
 
     // Exibição dos dados da Carta 01
     printf("\nCarta 01\n");
-    printf("Estado: %s", estado01);
-    printf("Codigo: %s", codigo01);
-    printf("Cidade: %s", nomeCidade01);
-    printf("Populacao: %lu", populacao01);
-    printf("Area: %.2f km", area01);
-    printf("PIB: %.2f bilhões de reais", pib01);
-    printf("Pontos turisticos: %d", pontosTuristicos01);
-    printf("PIB per capita: %.6f", quocientepib01);
-    printf("Densidade Populacional: %.6f habitantes/km", quocientedensidade01);
-    printf("Super Poder: %.6f", superPoder01);
+    printf("Estado: %s\n", estado01);
+    printf("Codigo: %s\n", codigo01);
+    printf("Cidade: %s\n", nomeCidade01);
+    printf("Populacao: %lu\n", populacao01);
+    printf("Area: %.2f kmn\n", area01);
+    printf("PIB: %.2f bilhões de reais\n", pib01);
+    printf("Pontos turisticos: %d\n", pontosTuristicos01);
+    printf("PIB per capita: %.6f\n", quocientepib01);
+    printf("Densidade Populacional: %.6f habitantes/km\n", quocientedensidade01);
+    printf("Super Poder: %.6f\n", superPoder01);
 
     // Exibição dos dados da Carta 02
     printf("\nCarta 02\n");
-    printf("Estado: %s", estado02);
-    printf("Codigo: %s", codigo02);
-    printf("Cidade: %s", nomeCidade02);
-    printf("Populacao: %lu", populacao02);
-    printf("Area: %.2f km", area02);
-    printf("PIB: %.2f bilhoes de reais", pib02);
-    printf("Pontos turisticos: %d", pontosTuristicos02);
-    printf("PIB per capita: %.6f", quocientepib02);
-    printf("Densidade Populacional: %.6f habitantes/km", quocientedensidade02);
-    printf("Super Poder: %.6f", superPoder02);
+    printf("Estado: %s\n", estado02);
+    printf("Codigo: %s\n", codigo02);
+    printf("Cidade: %s\n", nomeCidade02);
+    printf("Populacao: %lu\n", populacao02);
+    printf("Area: %.2f km\n", area02);
+    printf("PIB: %.2f bilhoes de reais\n", pib02);
+    printf("Pontos turisticos: %d\n", pontosTuristicos02);
+    printf("PIB per capita: %.6f\n", quocientepib02);
+    printf("Densidade Populacional: %.6f habitantes/km\n", quocientedensidade02);
+    printf("Super Poder: %.6f\n", superPoder02);
 
     // Comparações
     printf("\nComparacoes das cartas\n");
